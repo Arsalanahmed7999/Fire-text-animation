@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire text animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100vw;
+            background-color: #000014;
+            overflow: hidden;
+        }
+        h1{
+            color: red;
+            font-size: 4rem;
+            font-family: cursive;
+            animation: animate 5s linear infinite;
+        }
+        @keyframes animate {
+            0%,100%{
+                text-shadow: 0 0 10px yellow, 0 0 20px orange, 0 0 40px orangered, 0 0 80px red;
+            }
+            50%{
+                text-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Fire Text Animation</h1>
+</body>
+</html>
